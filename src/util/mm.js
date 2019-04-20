@@ -9,12 +9,12 @@
  * @author hk
  *
  * Created at     : 2019-04-19 23:00:19
- * Last modified  : 2019-04-19 23:03:37
+ * Last modified  : 2019-04-20 20:00:37
  */
 
 
 'use strict';
-
+var Hogan = require('hogan.js');
 var conf = {
     serverHost : ''
 };
