@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <%= require('html-loader!./layout/head-common.html')  %>
+    <title>网上购书平台</title>
 </head>
+
 <body>
-    hello
+    <%= require('html-loader!./layout/nav.html')  %>
+    <%= require('html-loader!./layout/header.html')  %>
+    <div class="page-warp w">
+        <%= require('html-loader!./layout/nav-side.html')  %>
+        <div class="content with-nav">test</div>
+    </div>
+
+    <%= require('html-loader!./layout/footer.html')  %>
 </body>
+
 </html>

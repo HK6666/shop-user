@@ -1,0 +1,37 @@
+/**
+ * hk的文件
+ *
+ * 不许抄袭
+ *
+ * long description for the file
+ *
+ * @summary short description for the file
+ * @author hk
+ *
+ * Created at     : 2019-04-20 11:18:50
+ * Last modified  : 2019-04-20 11:34:16
+ */
+
+.nav{
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+/* 用户部分 */
+.nav .user{
+    float: left;
+}
+.nav .user.login{
+    display: none;
+}
+.nav .user .link{
+    margin-right: 5px;
+}
+/* 导航链接部分 */
+.nav .nav-list{
+    float: right;
+}
+.nav .nav-list .nav-item{
+    display: inline-block;
+    margin-left: 5px;
+}

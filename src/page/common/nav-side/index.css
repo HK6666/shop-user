@@ -1,0 +1,34 @@
+/**
+ * hk的文件
+ *
+ * 不许抄袭
+ *
+ * long description for the file
+ *
+ * @summary short description for the file
+ * @author hk
+ *
+ * Created at     : 2019-04-20 14:30:51
+ * Last modified  : 2019-04-20 14:50:08
+ */
+
+ .nav-side{
+    float: left;
+    width: 130px;
+    min-height: 100px;
+}
+.nav-side .nav-item{
+    line-height: 25px;
+    font-size: 13px;
+}
+.nav-side .nav-item .link{
+    color: #888888;
+}
+.nav-side .nav-item.active .link{
+    color: #9900ff;
+}
+/* 右侧内容区 */
+.content.with-nav{
+    float: left;
+    width: 950px;
+}

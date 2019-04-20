@@ -1,0 +1,26 @@
+/**
+ * hk的文件
+ *
+ * 不许抄袭
+ *
+ * long description for the file
+ *
+ * @summary short description for the file
+ * @author hk
+ *
+ * Created at     : 2019-04-20 10:59:24
+ * Last modified  : 2019-04-20 11:19:17
+ */
+
+.nav-simple{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+.nav-simple .logo{
+    font-size: 26px;
+    font-weight: bold;
+    color: #9900ff;
+    text-decoration: none;
+}

@@ -1,0 +1,53 @@
+/**
+ * hk的文件
+ *
+ * 不许抄袭
+ *
+ * long description for the file
+ *
+ * @summary short description for the file
+ * @author hk
+ *
+ * Created at     : 2019-04-20 11:44:45
+ * Last modified  : 2019-04-20 11:52:02
+ */
+
+.header .logo{
+    position: absolute;
+    left: 60px;
+    top: 34px;
+    display: block;
+    font-size: 36px;
+    color: #9900ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header .search-con{
+    padding: 40px 0 30px 250px;
+}
+.header .search-con .search-input{
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid #b34cf8;
+    outline: none;
+}
+.header .search-con .search-btn{
+    position: absolute;
+    height: 44px;
+    width: 80px;
+}
+
+/* 面包屑导航 */
+.crumb{
+    margin-bottom: 15px;
+    height: 50px;
+    line-height: 50px;
+    background: #eee;
+    color: #888;
+    font-size: 14px;
+    border-top: 2px solid #9900ff;
+}

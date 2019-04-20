@@ -9,7 +9,7 @@
  * @author hk
  *
  * Created at     : 2019-04-17 16:07:50
- * Last modified  : 2019-04-17 16:19:52
+ * Last modified  : 2019-04-20 15:39:42
  */
 
 var webpack             = require('webpack');
@@ -48,7 +48,7 @@ var config = {
         // 'user-center'       : ['./src/page/user-center/index.js'],
         // 'user-center-update': ['./src/page/user-center-update/index.js'],
         // 'user-pass-update'  : ['./src/page/user-pass-update/index.js'],
-        // 'result'            : ['./src/page/result/index.js'],
+       'result'            : ['./src/page/result/index.js'],
         // 'about'             : ['./src/page/about/index.js'],
     },
     output: {
@@ -73,6 +73,15 @@ var config = {
             }
         ]
     },
+    resolve : {
+        alias : {
+            node_modules    : __dirname + '/node_modules',
+            util            : __dirname + '/src/util',
+            page            : __dirname + '/src/page',
+            service         : __dirname + '/src/service',
+            image           : __dirname + '/src/image'
+        }
+    },
     plugins: [
         // 独立通用模块到js/base.js
         new webpack.optimize.CommonsChunkPlugin({
@@ -82,8 +91,8 @@ var config = {
         // 把css单独打包到文件里
         new ExtractTextPlugin("css/[name].css"),
         // html模板的处理
-        new HtmlWebpackPlugin(getHtmlConfig('index')),
-        new HtmlWebpackPlugin(getHtmlConfig('list'))
+        new HtmlWebpackPlugin(getHtmlConfig('index'),'首页'),
+        new HtmlWebpackPlugin(getHtmlConfig('result'),'结果')
     ],
     devServer: {
         port: 8088,
@@ -97,6 +106,4 @@ var config = {
     }
 
 };
-
-
 module.exports = config;

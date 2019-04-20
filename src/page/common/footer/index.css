@@ -1,0 +1,31 @@
+/**
+ * hk的文件
+ *
+ * 不许抄袭
+ *
+ * long description for the file
+ *
+ * @summary short description for the file
+ * @author hk
+ *
+ * Created at     : 2019-04-20 11:38:10
+ * Last modified  : 2019-04-20 11:38:29
+ */
+
+.footer{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.footer .links{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .links .link{
+    padding: 0 10px;
+}
+.footer .copyright{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}

@@ -1,0 +1,97 @@
+/**
+ * hk的文件
+ *
+ * 不许抄袭
+ *
+ * long description for the file
+ *
+ * @summary short description for the file
+ * @author hk
+ *
+ * Created at     : 2019-04-19 23:05:40
+ * Last modified  : 2019-04-20 11:20:10
+ */
+ /* css reset*/
+ *{
+    /* 这个简写属性设置一个元素所有外边距的宽度，或者设置各边上外边距的宽度。 */
+    margin: 0;
+    /* padding 简写属性在一个声明中设置所有内边距属性。 */
+    padding: 0;
+ }
+body{
+    background: #f6f6f6;
+    font: 12px/1.5 tahoma, arial, Microsoft YaHei, sans-serif;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    border: none;
+}
+label{
+    cursor: pointer;
+}
+input[type='checkbox']{
+    cursor: pointer;
+}
+
+/* 定宽布局 */
+.w{
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /* 超出边界不显示 */
+}
+/* 全局通用样式 */
+/* 隐藏类 */
+，hide{
+    display: none;
+}
+/* 超链接样式 */
+.link{
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link:hover{
+    color: #9900ff;
+}
+.link-text{
+    color: #999;
+    text-decoration: none;
+}
+/* btn */
+.btn{
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+    background: #9900ff;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-mini{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+/* loading */
+.loading{
+    margin: 10px auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: url(../../image/icon/loading.gif) no-repeat;
+    opacity: .6;
+}
