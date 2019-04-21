@@ -1,20 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title>hkshop书城</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <div class="w">
+            <ul class="keywords-list">
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=手机">童书</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=数码">幼儿启蒙</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=电脑">儿童</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=办公配件">儿童文学</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=电视">人文社科</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=空调">历史</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=冰箱">社会科学</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=洗衣机">心理学</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=厨卫家电">文学</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=小家电">大师作品</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=家具">动漫</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=家具">国漫</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=家装">日漫</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=厨卫家电">软件教程</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=小家电">office</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=个护化妆">个护化妆</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=清洁用品">清洁用品</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=纸品">纸品</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=母婴用品">程序员书籍</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=儿童玩具">java</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=童装童鞋">C++</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=鞋靴">生活</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=箱包">摄影</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=钟表">健身</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=珠宝">养生</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=图书">小说</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=音像">长篇</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=电子书">短篇</a>
+                </li>
+            </ul>
+            <div class="banner-con">
+                <div class="loading"></div>
+            </div>
+        </div>
+        <div class="w">
+            <div class="floor-wrap">
+                <h1 class="floor-title">F1 少儿</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100006">
+                            <span class="floor-text">童书</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor1-1.jpg') %>" alt="童书" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100007">
+                            <span class="floor-text">幼儿启蒙</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor1-2.jpg') %>" alt="幼儿启蒙" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100008">
+                            <span class="floor-text">绘本与漫画</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor1-3.jpg') %>" alt="绘本与漫画" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100009">
+                            <span class="floor-text">儿童文学</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor1-4.jpg') %>" alt="儿童文学" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100010">
+                            <span class="floor-text">科普百科</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor1-5.jpg') %>" alt="科普百科" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F2 人文社科</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100011">
+                            <span class="floor-text">历史</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor2-1.jpg') %>" alt="历史" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100012">
+                            <span class="floor-text">哲学与宗教</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor2-2.jpg') %>" alt="哲学与宗教" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100013">
+                            <span class="floor-text">社会科学</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor2-3.jpg') %>" alt="社会科学" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100014">
+                            <span class="floor-text">政治与军事</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor2-4.jpg') %>" alt="政治与军事" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100015">
+                            <span class="floor-text">国学古籍</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor2-5.jpg') %>" alt="国学古籍" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F3 程序员书籍</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100016">
+                            <span class="floor-text">JAVA</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor3-1.jpg') %>" alt="JAVA" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100017">
+                            <span class="floor-text">C++</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor3-2.jpg') %>" alt="C++" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100018">
+                            <span class="floor-text">PHP</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor3-3.jpg') %>" alt="PHP" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100019">
+                            <span class="floor-text">PYTHON</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor3-4.jpg') %>" alt="PYTHON" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100020">
+                            <span class="floor-text">软件工程</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor3-5.jpg') %>" alt="软件工程" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F4 生活</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100021">
+                            <span class="floor-text">摄影</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor4-1.jpg') %>" alt="摄影" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100022">
+                            <span class="floor-text">健身</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor4-2.jpg') %>" alt="健身" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100023">
+                            <span class="floor-text">菜谱</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor4-3.jpg') %>" alt="菜谱" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100024">
+                            <span class="floor-text">养生保健</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor4-4.jpg') %>" alt="养生保健" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100025">
+                            <span class="floor-text">心理健康</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor4-5.jpg') %>" alt="心理健康" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F5 文学</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100026">
+                            <span class="floor-text">小说</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor5-1.jpg') %>" alt="小说" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100027">
+                            <span class="floor-text">文学</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor5-2.jpg') %>" alt="文学" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100028">
+                            <span class="floor-text">传记</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor5-3.jpg') %>" alt="传记" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100029">
+                            <span class="floor-text">青春</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor5-4.jpg') %>" alt="青春" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100030">
+                            <span class="floor-text">动漫</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor5-5.jpg') %>" alt="动漫" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-<head>
-    <%= require('html-loader!./layout/head-common.html')  %>
-    <title>网上购书平台</title>
-</head>
-
-<body>
-    <%= require('html-loader!./layout/nav.html')  %>
-    <%= require('html-loader!./layout/header.html')  %>
-    <div class="page-warp w">
-        <%= require('html-loader!./layout/nav-side.html')  %>
-        <div class="content with-nav">test</div>
-    </div>
-
-    <%= require('html-loader!./layout/footer.html')  %>
-</body>
-
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
 </html>
