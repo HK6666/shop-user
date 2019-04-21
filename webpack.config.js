@@ -9,7 +9,7 @@
  * @author hk
  *
  * Created at     : 2019-04-17 16:07:50
- * Last modified  : 2019-04-21 13:39:25
+ * Last modified  : 2019-04-21 13:55:03
  */
 
 var webpack             = require('webpack');
@@ -49,7 +49,7 @@ var config = {
         'user-center-update': ['./src/page/user-center-update/index.js'],
         'user-pass-update'  : ['./src/page/user-pass-update/index.js'],
         'result'            : ['./src/page/result/index.js'],
-        // 'about'             : ['./src/page/about/index.js'],
+        'about'             : ['./src/page/about/index.js'],
     },
     output: {
         path        : __dirname + '/dist/',
@@ -106,6 +106,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center', '个人中心')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
+        new HtmlWebpackPlugin(getHtmlConfig('about', '关于hkshop')),
     ],
     devServer: {
         port: 8088,
