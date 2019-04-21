@@ -9,7 +9,7 @@
  * @author hk
  *
  * Created at     : 2019-04-17 16:07:50
- * Last modified  : 2019-04-21 12:04:56
+ * Last modified  : 2019-04-21 12:24:28
  */
 
 var webpack             = require('webpack');
@@ -37,7 +37,7 @@ var config = {
         'index'             : ['./src/page/index/index.js'],
         'list'              : ['./src/page/list/index.js'],
         'detail'            : ['./src/page/detail/index.js'],
-        // 'cart'              : ['./src/page/cart/index.js'],
+        'cart'              : ['./src/page/cart/index.js'],
         // 'order-confirm'     : ['./src/page/order-confirm/index.js'],
         // 'order-list'        : ['./src/page/order-list/index.js'],
         // 'order-detail'      : ['./src/page/order-detail/index.js'],
@@ -95,6 +95,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('list', '商品列表')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('detail', '商品详情')),
+        new HtmlWebpackPlugin(getHtmlConfig('cart', '购物车')),
         new HtmlWebpackPlugin(getHtmlConfig('result'),'结果'),
         new HtmlWebpackPlugin(getHtmlConfig('user-register', '用户注册')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', '找回密码')),
